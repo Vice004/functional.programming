@@ -1,2 +1,2 @@
 # functional.programming
-Short course on functional programming with C#
+Short course I took on functional programming with C# touching heavily on immutability
