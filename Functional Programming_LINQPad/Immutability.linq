@@ -3,18 +3,18 @@
 public class DateRange
 {
 	//making the class truely immutable
-	private readonly DateTime _start;
-	private readonly DateTime _end;
+	//private readonly DateTime _start;
+	//private readonly DateTime _end;
 	
-	public DateTime Start{ get { return _start; } }
-	public DateTime End{ get { return _end; } }
+	public DateTime Start{ get; }
+	public DateTime End{ get; }
 	
 	//constructor
 	public DateRange(DateTime start, DateTime end)
 	{
 		if (start.CompareTo(end) >= 0) throw new Exception("End must occur after start");
-		_start = start;
-		_end = end;
+		Start = start;
+		End = end;
 	}
 	
 	//method to check if date is in range
